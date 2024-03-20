@@ -8,12 +8,10 @@ if ! dpkg -s python3-venv >/dev/null 2>&1; then
 fi
 
 # Define the name of your virtual environment
-VENV_NAME="network_monitoring"
-
-mkdir /home/bolt6/network-monitoring
+VENV_NAME="network_monitor"
 
 # Navigate to your project directory
-cd /home/bolt6/network-monitoring
+cd /home/bolt6/network-monitor
 
 # Check if the virtual environment already exists
 if [ ! -d "$VENV_NAME" ]; then
